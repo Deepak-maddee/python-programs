@@ -1,6 +1,3 @@
-#dictionary
-#concession stand program
-
 menu = {"popcorn" : 150,
     "soda" : 100,
     "samosa" : 50,
@@ -32,26 +29,3 @@ for food in cart:
 print()
 print("----------YOUR ORDER----------")
 print(f"Total is: {total:.2f}")
-
-
-"""
-cap = {"KA" : "BG",
-    "TN" : "CH",
-    "AP" : "HYD"}
-
-
-print(dir(cap))
-print(help(cap))
-
-print(cap.get("KA"))
-
-if cap.get("KA"):
-    print("Exists")
-else:
-    print("NE")
-
-
-keys = cap.keys()
-for value in cap.values():
-    print(value)
-"""
