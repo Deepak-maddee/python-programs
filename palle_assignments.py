@@ -1,5 +1,5 @@
 #assignment 1 - to read a number from keyboard and give the order of the days of the week
-
+"""
 _ = int(input("Enter a number to know the respective order of the days of the week in between 1-7: "))
 
 if _ == 1:
@@ -19,3 +19,43 @@ elif _ == 7:
 else:
     print("No week")
 
+
+#assignment 2 - read any two numbers from input and choose the highest number
+
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+
+if n1>n2:
+    print(f"{n1} is greater than {n2}")
+else:
+    print(f"{n2} is greater than {n1}")
+
+
+#assignment 3 - 5 multiple
+
+n = int(input("enter a number: "))
+if n % 5 == 0:
+    print("Good")
+else:
+    print("Bad")
+
+
+#assignment 4 - divisible by 2 and 5
+n = int(input("enter a number: "))
+if n % 2 == 0 and n % 5 == 0:
+    print("divisible")
+else:
+    print("not divisible")
+
+
+#assignment 4 - read weather from keyboard
+w = int(input("Enter the temperature in Celcius: "))
+if 0 < w <= 15 :
+    print("today is very cold")
+elif 15 < w <= 35 :
+    print("today is simple weather")
+elif 35 < w <= 45 :
+    print("today is very hot")
+else:
+    print("Cannot live for this temperature")
+"""
