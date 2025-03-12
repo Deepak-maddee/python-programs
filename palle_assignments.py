@@ -14,6 +14,8 @@ elif _ == 5:
     print("Friday")
 elif _ == 6:
     print("Saturday")
-else:
+elif _ == 7:
     print("Sunday")
+else:
+    print("No week")
 
