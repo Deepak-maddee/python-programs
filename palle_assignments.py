@@ -59,3 +59,25 @@ elif 35 < w <= 45 :
 else:
     print("Cannot live for this temperature")
 """
+
+# today's assignment -3 problems
+#1st problem
+n = 1
+while n <= 100:
+    print(n)
+    n += 2
+print()
+
+#2nd problem
+n = 100
+while n >= 5:
+    print(n)
+    n -= 5
+print()
+
+#3rd problem
+n = -100
+while n <= -1:
+    print(n)
+    n += 1
+print()
