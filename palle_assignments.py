@@ -58,15 +58,14 @@ elif 35 < w <= 45 :
     print("today is very hot")
 else:
     print("Cannot live for this temperature")
-"""
+
 
 # today's assignment -3 problems
 #1st problem
 n = 1
 while n <= 100:
-    print(n)
+    print(n,end = " ")
     n += 2
-print()
 
 #2nd problem
 n = 100
@@ -81,3 +80,15 @@ while n <= -1:
     print(n)
     n += 1
 print()
+
+#4th problem
+n=2
+while n<=100:
+    print(n," ")
+    n+=2
+print(n)
+"""
+#print only the 5 divisibles from 1 to 100
+for n in range(1,101):
+    if n % 5 == 0:
+        print(n, end = " ")
