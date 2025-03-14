@@ -87,8 +87,25 @@ while n<=100:
     print(n," ")
     n+=2
 print(n)
-"""
+
 #print only the 5 divisibles from 1 to 100
 for n in range(1,101):
     if n % 5 == 0:
         print(n, end = " ")
+
+u = 1
+while u <=100:
+    if u%5==0:
+        print(u,end = " ")
+        u+=1
+"""
+#print only numbers which are divisible by 4 and 7 from 50 to 100
+for n in range(50,101):
+    if n % 4 == 0 and n % 7 == 0:
+        print(n, end = " ")
+
+u = 50
+while u <= 100:
+    if u % 4 == 0 and u % 7 == 0:
+        print(u, eend = ' ')
+        u += 1
