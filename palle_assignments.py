@@ -200,8 +200,41 @@ print("Modified:", modified_chars)
 
 """
 
-elements = [10,11,12,13,15,14,16,18,17,19,20]
-for x in elements :
-    print(x,end=" ")
-    x=x+1
+elements = [10, 11, 12, 13, 15, 14, 16, 18, 17, 19, 20]
 
+# 1. Print all elements horizontally
+print("1. All elements horizontally:")
+for num in elements:
+    print(num, end=", ")
+print("\n")
+
+# 2. Print alternate elements starting with the first element
+print("2. Alternate elements starting with the first:")
+for i in range(0, len(elements), 2):
+    print(elements[i], end=", ")
+print("\n")
+
+# 3. Print alternate elements starting with the second element
+print("3. Alternate elements starting with the second:")
+for i in range(1, len(elements), 2):
+    print(elements[i], end=", ")
+print("\n")
+
+# 4. Print alternate elements starting with the last element
+print("4. Alternate elements starting with the last:")
+for i in range(len(elements) - 1, -1, -2):
+    print(elements[i], end=", ")
+print("\n")
+
+# 5. Print alternate elements starting with the second-to-last element
+print("5. Alternate elements starting with the second-to-last:")
+for i in range(len(elements) - 2, -1, -2):
+    print(elements[i], end=", ")
+print("\n")
+
+# 6. Print even numbers
+print("6. Even numbers:")
+for num in elements:
+    if num % 2 == 0:
+        print(num, end=", ")
+print("\n")
