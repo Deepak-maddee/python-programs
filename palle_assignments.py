@@ -163,7 +163,7 @@ print("Sum of odd index even elements:", sum_odd_index_even)
 print("Count of even index odd elements:", count_even_index_odd)
 
 
-"""
+
 institute = "Palle Technologies"
 
 # Print only vowels
@@ -197,3 +197,11 @@ for char in institute:
     else:
         modified_chars += '@'
 print("Modified:", modified_chars)
+
+"""
+
+elements = [10,11,12,13,15,14,16,18,17,19,20]
+for x in elements :
+    print(x,end=" ")
+    x=x+1
+
