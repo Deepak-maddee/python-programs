@@ -238,3 +238,130 @@ for num in elements:
     if num % 2 == 0:
         print(num, end=", ")
 print("\n")
+
+elements = [10, 11, 12, 13, 15, 14, 16, 18, 17, 19, 20]
+
+# 7. Print odd numbers
+print("7. Odd numbers:")
+for num in elements:
+    if num % 2 != 0:
+        print(num, end=", ")
+print("\n")
+
+# 8. Print the sum of all elements
+print("8. Sum of all elements:")
+total_sum = 0
+for num in elements:
+    total_sum += num
+print(total_sum)
+print("\n")
+
+# 9. Print the sum of even numbers
+print("9. Sum of even numbers:")
+even_sum = 0
+for num in elements:
+    if num % 2 == 0:
+        even_sum += num
+print(even_sum)
+print("\n")
+
+# 10. Print the sum of odd numbers
+print("10. Sum of odd numbers:")
+odd_sum = 0
+for num in elements:
+    if num % 2 != 0:
+        odd_sum += num
+print(odd_sum)
+print("\n")
+
+# 11. Print the sum of elements at even indices
+print("11. Sum of elements at even indices:")
+even_index_sum = 0
+for i in range(0, len(elements), 2):
+    even_index_sum += elements[i]
+print(even_index_sum)
+print("\n")
+
+# 1. Print even numbers from 2 to 101 using while loop
+print("1. Even numbers from 2 to 101:")
+num = 2
+while num <= 101:
+    print(num, end=", ")
+    num += 2
+print("\n")
+
+# 2. Print odd numbers from 1 to 100 using while loop
+print("2. Odd numbers from 1 to 100:")
+num = 1
+while num <= 100:
+    print(num, end=", ")
+    num += 2
+print("\n")
+
+# 3. Print characters from 'a' to 'z' using while loop
+print("3. Characters from a to z:")
+char_code = ord('a')  # Get the ASCII code for 'a'
+while char_code <= ord('z'):  # ASCII code for 'z'
+    print(chr(char_code), end=", ")
+    char_code += 1
+print("\n")
+
+# 4. Print characters from 'z' to 'a' using while loop
+print("4. Characters from z to a:")
+char_code = ord('z') # Get the ASCII code for 'z'
+while char_code >= ord('a'): # ASCII code for 'a'
+    print(chr(char_code), end=", ")
+    char_code -= 1
+print("\n")
+
+# 5. Print the 5 table in reverse order (5 x 10 to 5 x 1) using while loop
+print("5. 5 table in reverse order:")
+multiplier = 10
+while multiplier >= 1:
+    print(f"5 * {multiplier} = {5 * multiplier}")
+    multiplier -= 1
+print("\n")
+
+# 1. List iteration with while loop and index
+print("1. List iteration with while loop and index:")
+my_list = [10, 20, 30, 40]
+index = 0
+while index < len(my_list):
+    print(my_list[index], end="-")
+    index += 1
+print("\n")
+
+# 2. Tuple iteration with while loop and index (reverse order)
+print("2. Tuple iteration with while loop and index (reverse):")
+my_tuple = (10, 20, 30, 40)
+index = len(my_tuple) - 1  # Start from the last index
+while index >= 0:
+    print(my_tuple[index], end="-")
+    index -= 1
+print("\n")
+
+# 1. Count digits in a number
+print("1. Count digits in a number:")
+x = int(input("Enter a number: "))  # Get input from the user
+count = 0
+if x == 0:  # Special case: 0 has one digit
+    count = 1
+else:
+    x = abs(x)  # Handle negative numbers
+    while x > 0:
+        x //= 10  # Integer division to remove the last digit
+        count += 1
+print("Number of digits:", count)
+print()
+
+# 2. Calculate factorial of a number
+print("2. Calculate factorial of a number:")
+y = int(input("Enter a number: "))  # Get input from the user
+if y < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    factorial = 1
+    for i in range(1, y + 1):
+        factorial *= i
+    print("Factorial:", factorial)
+
