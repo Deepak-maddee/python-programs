@@ -198,8 +198,6 @@ for char in institute:
         modified_chars += '@'
 print("Modified:", modified_chars)
 
-"""
-
 elements = [10, 11, 12, 13, 15, 14, 16, 18, 17, 19, 20]
 
 # 1. Print all elements horizontally
@@ -364,4 +362,26 @@ else:
     for i in range(1, y + 1):
         factorial *= i
     print("Factorial:", factorial)
+"""
 
+#assignment
+# Original tuple with duplicate elements
+original_tuple = (1, 2, 3, 4, 4, 5, 5, 6)
+
+# Convert tuple to set to remove duplicates, then convert back to tuple
+unique_tuple = tuple(set(original_tuple))
+
+print(unique_tuple)
+
+##
+def find_second_maximum(lst):
+    # Convert list to a set to remove duplicates and sort it in descending order
+    unique_sorted_lst = sorted(set(lst), reverse=True)
+    
+    # Return the second maximum element if it exists
+    return unique_sorted_lst[1] if len(unique_sorted_lst) >= 2 else None
+
+# Example usage
+numbers = [25, 25, 25, 25]
+second_max = find_second_maximum(numbers)
+print("Second maximum element:", second_max)
